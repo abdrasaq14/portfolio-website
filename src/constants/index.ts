@@ -32,9 +32,10 @@ import {
   mysql,
   jira,
   docker,
-  carrent,
-  jobit,
-  tripguide,
+  quickgrade,
+  traidr,
+  sandr,
+  notes,
   nextjs,
   vscode
 } from "../assets";
@@ -206,7 +207,7 @@ const experiences: TExperience[] = [
   {
     title: "Graphic Designer",
     companyName: "S&R Computer Training Institute",
-    icon: upwork,
+    icon: sandr,
     iconBg: "#E6DEDD",
     date: "Jun. 2011 - Sept. 2017",
     points: [
@@ -245,67 +246,90 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "QuickGrade",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An innovative exam management app designed to streamline the exam process for both lecturers and students within an institution. The app allows lecturers to set exam questions and students to take exams, with automatic grading for objective questions.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+      
+      
+    ],
+    image: quickgrade,
+    sourceCodeLink: "https://quickgrade-frontend-lbbo.onrender.com/",
+  },
+  {
+    name: "Traidr",
+    description:
+      "An online local community marketplace that provides a platform for users to sell and buy pre-owned goods and items like furniture, appliances, clothing and antiques.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgres",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: traidr,
+    sourceCodeLink: "https://traidr-frontend.onrender.com/",
+  },
+  // {
+  //   name: "LearnHub",
+  //   description:
+  //     "A learning management system that gives students virtual access to a wide range of courses in many topic areas. The app tends to overcome the limitations of traditional classroom settings by allowing students to learn remotely.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "restapi",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "scss",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: jobit,
+  //   sourceCodeLink: "https://github.com/",
+  // },
+  {
+    name: "Notes-on-the-go",
+    description:
+      "A note-taking app (Notes-On-The-Go) that allows users to virtually access, create, and save events from the past, present, and upcoming ones.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: notes,
+    sourceCodeLink: "https://notes-on-the-go.onrender.com/",
   },
 ];
 

@@ -5,9 +5,10 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { experiences } from '../../constants';
 import { SectionWrapper } from '../../hoc';
-import { Header } from '../atoms/Header';
+// import { Header } from '../atoms/Header';
 import { TExperience } from '../../types';
 import { config } from '../../constants/config';
+import { styles } from '../../constants/styles';
 
 const ExperienceCard: React.FC<TExperience> = experience => {
   return (
@@ -53,8 +54,9 @@ const ExperienceCard: React.FC<TExperience> = experience => {
 const Experience = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.workExperience} />
-
+      {/* <Header useMotion={true} {...config.sections.workExperience} /> */}
+      <p className={styles.sectionSubText}>{config.sections.workExperience.p}</p>
+      <h2 className={styles.sectionHeadText}>{config.sections.workExperience.h2}</h2>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
