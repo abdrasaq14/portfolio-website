@@ -33,7 +33,7 @@ type TConfig = {
   sections: {
     about: Required<TSection>;
     technologies: TSection;
-    experience: TSection;
+    workExperience: TSection;
     feedbacks: TSection;
     works: Required<TSection>;
   };
@@ -74,7 +74,7 @@ export const config: TConfig = {
       p: "What I have been using so far",
       h2: "Skills & tools.",
     },
-    experience: {
+    workExperience: {
       p: "What I have done so far",
       h2: "Work Experience.",
     },

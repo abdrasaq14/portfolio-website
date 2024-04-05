@@ -18,7 +18,7 @@ const ExperienceCard: React.FC<TExperience> = experience => {
       }}
       contentArrowStyle={{ borderRight: '7px solid  #232631' }}
       date={experience.date}
-      iconStyle={{ background: '#fffff' }}
+      iconStyle={{ background: '#ffff', backgroundPosition: 'center', backgroundSize: 'cover' }}
       icon={
         <div className="flex h-full w-full items-center justify-center">
           <img
@@ -53,7 +53,7 @@ const ExperienceCard: React.FC<TExperience> = experience => {
 const Experience = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.experience} />
+      <Header useMotion={true} {...config.sections.workExperience} />
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
