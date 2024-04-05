@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
 import {
   About,
@@ -10,9 +10,9 @@ import {
   Tech,
   Works,
   StarsCanvas,
-} from "./components";
-import { useEffect } from "react";
-import { config } from "./constants/config";
+} from './components';
+import { useEffect } from 'react';
+import { config } from './constants/config';
 
 const App = () => {
   useEffect(() => {
@@ -29,8 +29,8 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Experience />
         <Tech />
+        <Experience />
         <Works />
         <Feedbacks />
         <div className="relative z-0">

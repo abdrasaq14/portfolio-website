@@ -32,6 +32,7 @@ type TConfig = {
   } & TSection;
   sections: {
     about: Required<TSection>;
+    technologies: TSection;
     experience: TSection;
     feedbacks: TSection;
     works: Required<TSection>;
@@ -40,13 +41,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Abdulrasaq",
+    fullName: "Abdulrasaq Suleiman",
+    email: "abdrasaq14@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Abdulrasaq",
+    p: ["I am a full-stack software developer, ", "passionate about innovative solutions."],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +68,11 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a full-stack software engineer skilled in Node.js (BE) and React.js (FE), with a strong background in agile methodologies. My expertise in design honed through my background as a graphic designer complements my coding skills, enabling me to create scalable, user-friendly applications that meet business needs and adhere to best practices.`,
+    },
+    technologies: {
+      p: "What I have been using so far",
+      h2: "Skills & tools.",
     },
     experience: {
       p: "What I have done so far",
@@ -84,11 +85,7 @@ export const config: TConfig = {
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `These projects highlight my expertise and experience through real-word examples of my work. Each project is concisely detailed, featuring links to code repositories and live demonstrations, illustrating my proficiency in addressing intricate challenges, employing a range of technologies, and effectively overseeing projects.`,
     },
   },
 };

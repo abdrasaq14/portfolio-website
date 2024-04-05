@@ -3,7 +3,7 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
+import github from "./tech/github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -19,12 +19,17 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import vscode from "./tech/visual-studio-code.png";
+import nextjs from "./tech/nextjs.png";
+import mysql from "./tech/mysql.png";
+import postgres from "./tech/postgres.png";
+import jira from "./tech/jira.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import decagon from "../assets/company/decagon.png"
+import nica from "../assets/company/nica.png"
+import stx from "../assets/company/stx.png"
+import upwork from "../assets/company/upwork.png"
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -51,11 +56,15 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  nextjs,
+  vscode,
+  decagon,
+  nica,
+  stx,
+  mysql,
+  postgres,
+  jira,
+  upwork,
   carrent,
   jobit,
   tripguide,

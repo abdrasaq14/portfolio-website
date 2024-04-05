@@ -23,21 +23,29 @@ import {
   mongodb,
   git,
   figma,
+  decagon,
+  nica,
+  stx,
+  github,
+  upwork,
+  postgres,
+  mysql,
+  jira,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  nextjs,
+  vscode
 } from "../assets";
-
 export const navLinks: TNavLink[] = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "tech",
+    title: "Skills",
   },
   {
     id: "work",
@@ -51,32 +59,24 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Full-stack development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Front-end Developement",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Back-end Developement",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Graphics Design",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -86,8 +86,25 @@ const technologies: TTechnology[] = [
     icon: typescript,
   },
   {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "Next JS",
+    icon: nextjs,
+  },
+
+  {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Redux Toolkit",
@@ -98,20 +115,28 @@ const technologies: TTechnology[] = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "Postgres",
+    icon: postgres,
+  },
+  {
+    name: "VS Code",
+    icon: vscode,
   },
   {
     name: "git",
     icon: git,
+  },
+  {
+    name: "gitHub",
+    icon: github,
   },
   {
     name: "figma",
@@ -121,59 +146,72 @@ const technologies: TTechnology[] = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "jira",
+    icon: jira,
+  },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Software Engineer",
+    companyName: "Decagon Institute",
+    icon: decagon,
+    iconBg: "#fffff",
+    date: "Oct. 2020 - Feb. 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked as a frontend engineer in designing the front-end of (Traidr), an e-commerce website that operates as an online trading platform.",
+      "As a Full Stack Engineer on the QuickGrade project, I contributed to developing an exam management app, focusing on improving both its functionality and user experience through frontend and backend development.",
+      "I served as a Backend Engineer for LearnHub, a remote learning platform, where I designed and implemented the backend to efficiently deliver educational content and support interactive learning experiences.",
+      "Designed and integrated RESTful APIs with authentication and authorization mechanisms in existing applications using Node.js, Express.js & JWTs to control API access, while ensuring adherence to best practices, and ease of use.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+    title: "Software Engineer/IT Support Officer",
+    companyName: "National Institute of Credit Administration",
+    icon: nica,
+    iconBg: "#fffff",
+    date: "Nov. 2021 - Sept. 2022",
+    points: [
+      "Conducted regular bug fixes and troubleshooting to maintain the integrity of the institute's website codebase, implementing timely software updates and security fixes to uphold the website's robustness.",
+      "Maintained the institute's WLAN to ensure proper functionality, performed regular PC checks ups, software upgrading, and general system maintenance.",
+      "Oversaw database management, monitoring performance for efficient data handling, and established backup procedures to safeguard critical data.",
+      "Supported the media team by designing deliverables for social media campaigns, souvenirs etc.",
+    ],
+  },
+  {
+    title: "Intern Software Developer",
+    companyName: "STX Technologies",
+    icon: stx,
+    iconBg: "#fffff",
+    date: "Apr. 2020 - Sept. 2021",
+    points: [
+      "Developed a note-taking app (Notes-On-The-Go) that allows users to virtually create, and edit notes from any device with a cross-platform synchronization feature.",
+      "Collaborated with senior engineers to implement new features and functionalities, contributing to the development process by writing, debugging, and testing code for various components of software applications.",
+      "Identified and resolved technical problems, demonstrating a proactive and analytical approach to troubleshooting.",
+      "Contributed to the continuous improvement of software solutions through problem-solving initiatives.",
+    ],
+  },
+  {
+    title: "UX Designer (Freelance)",
+    companyName: "Upwork",
+    icon: upwork,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan. 2018 - Feb. 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Using Figma and Adobe XD, I designed and produced low-fidelity wireframes and high-fidelity prototypes, as part of an iterative design process, facilitating user testing and systematically incorporated feedback received during testing phases to refine design elements.",
+      "I conceptualized and designed eye-catching deliverables like flyers, web banners, cover designs, posters, and thumbnails within established deadlines and in accordance with client requirements. obtaining a 75% client return rate.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
+    title: "Graphic Designer",
+    companyName: "S&R Computer Training Institute",
+    icon: upwork,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jun. 2011 - Sept. 2017",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Responsible for the creation of daily print designs for clients which include but are not limited to certificates, flyers, letterheads, banners, Invoices, logos, posters, book covers, greeting cards, and infographic designs using Adobe Photoshop, Illustrator & CorelDraw Graphic Design Suite.",
+      "I conceptualized and designed eye-catching deliverables like flyers, web banners, cover designs, posters, and thumbnails within established deadlines and in accordance with client requirements. obtaining a 75% client return rate.",
     ],
   },
 ];
