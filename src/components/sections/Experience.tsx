@@ -53,6 +53,7 @@ const ExperienceCard: React.FC<TExperience> = experience => {
 const Experience = () => {
   return (
     <>
+      {/* <Header useMotion={true} {...config.sections.workExperience} /> */}
       <Header useMotion={true} {...config.sections.workExperience} />
 
       <div className="mt-20 flex flex-col">
