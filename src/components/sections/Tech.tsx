@@ -8,7 +8,7 @@ const Tech = () => {
     <>
       <Header useMotion={true} {...config.sections.technologies} />
 
-      <div className="flex flex-row flex-wrap justify-center gap-10 mt-20">
+      <div className="flex flex-row flex-wrap justify-center gap-10 mt-10">
         {technologies.map(technology => (
           <div className="h-28 w-28" key={technology.name}>
             <img
