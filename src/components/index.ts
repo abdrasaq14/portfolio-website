@@ -14,6 +14,7 @@ import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import CanvasLoader from "./layout/Loader";
 import Whatsapp from "./whatsapp/Whatsapp";
+import SocialMediaHandles from "./socialMediaHandles/SocialMediaHandles";
 
 export {
   Hero,
@@ -28,5 +29,6 @@ export {
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
-  Whatsapp
+  Whatsapp,
+  SocialMediaHandles
 };

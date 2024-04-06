@@ -16,6 +16,7 @@ module.exports = {
       },
       boxShadow: {
         card: '0px 35px 120px -15px #211e35',
+        'custom-shadow': '10px 2px 25px #050816',
       },
       screens: {
         xs: '450px',
@@ -29,6 +30,7 @@ module.exports = {
       },
       animation: {
         pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        appear: 'appear 1.5s ease-in-out 2s backwards',
       },
     },
   },

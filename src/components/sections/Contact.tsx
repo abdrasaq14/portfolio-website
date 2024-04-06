@@ -69,9 +69,9 @@ const Contact = () => {
     <div className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row`}>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1 xl:max-w-[45%] rounded-2xl overflow-hidden shadow-primary"
+        className="h-[350px] md:h-[550px] hidden xl:block xl:h-auto xl:flex-1 xl:max-w-[45%] rounded-2xl overflow-hidden shadow-primary"
       >
-        <img src={myImage} alt="abdrasaq-suleiman" className="h-[100%]" />
+        <img src={myImage} alt="abdrasaq-suleiman" className="h-full" />
       </motion.div>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}

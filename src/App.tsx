@@ -1,6 +1,16 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, Whatsapp } from './components';
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  Whatsapp,
+  SocialMediaHandles,
+} from './components';
 import { useEffect } from 'react';
 import { config } from './constants/config';
 
@@ -18,6 +28,7 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
+        <SocialMediaHandles />
         <About />
         <Tech />
         <Experience />
