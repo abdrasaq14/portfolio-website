@@ -15,7 +15,7 @@ import Contact from "./sections/Contact";
 import CanvasLoader from "./layout/Loader";
 import Whatsapp from "./whatsapp/Whatsapp";
 import SocialMediaHandles from "./socialMediaHandles/SocialMediaHandles";
-
+import Footer from "./sections/Footer";
 export {
   Hero,
   Navbar,
@@ -30,5 +30,6 @@ export {
   BallCanvas,
   ComputersCanvas,
   Whatsapp,
-  SocialMediaHandles
+  SocialMediaHandles,
+  Footer
 };

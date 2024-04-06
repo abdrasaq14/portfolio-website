@@ -10,6 +10,7 @@ import {
   Works,
   Whatsapp,
   SocialMediaHandles,
+  Footer,
 } from './components';
 import { useEffect } from 'react';
 import { config } from './constants/config';
@@ -38,6 +39,7 @@ const App = () => {
           <Contact />
           {/* <StarsCanvas /> */}
         </div>
+        <Footer />
       </div>
       <Whatsapp />
     </BrowserRouter>
