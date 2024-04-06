@@ -6,7 +6,6 @@ import web from "./web.png";
 import github from "./tech/github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import whatsapp from "./whatsapp.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -31,7 +30,7 @@ import nica from "../assets/company/nica.png"
 import stx from "../assets/company/stx.png"
 import upwork from "../assets/company/upwork.png"
 import sandr from "../assets/company/s&r.png"
-import myImage from "../assets/ICON.jpg"
+import myImage from "../assets/abdrasaq.png"
 
 import quickgrade from "./work/quick.png";
 import traidr from "./work/traidr.png"
