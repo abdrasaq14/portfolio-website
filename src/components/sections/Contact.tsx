@@ -1,77 +1,67 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 
 import { SectionWrapper } from '../../hoc';
 import { slideIn } from '../../utils/motion';
 import { config } from '../../constants/config';
 import { Header } from '../atoms/Header';
 import { myImage } from '../../assets';
-
+import axios from 'axios';
+import PopUp from '../pop/PopUp';
 const INITIAL_STATE = Object.fromEntries(
   Object.keys(config.contact.form).map(input => [input, ''])
 );
 
-const emailjsConfig = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  templateId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
-};
-
+const BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL;
 const Contact = () => {
   const formRef = useRef<React.LegacyRef<HTMLFormElement> | undefined>();
   const [form, setForm] = useState(INITIAL_STATE);
   const [loading, setLoading] = useState(false);
-
+  const [error, setError] = useState('');
+  const [showPopUp, setShowPopUp] = useState(false);
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | undefined
   ) => {
+    //const emailRegEx = /^[a-zA-Z0-9.-%+_]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
     if (e === undefined) return;
+
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement> | undefined) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement> | undefined) => {
     if (e === undefined) return;
     e.preventDefault();
     setLoading(true);
-
-    emailjs
-      .send(
-        emailjsConfig.serviceId,
-        emailjsConfig.templateId,
-        {
-          form_name: form.name,
-          to_name: config.html.fullName,
-          from_email: form.email,
-          to_email: config.html.email,
-          message: form.message,
-        },
-        emailjsConfig.accessToken
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
-
-          setForm(INITIAL_STATE);
-        },
-        error => {
-          setLoading(false);
-
-          console.log(error);
-          alert('Something went wrong.');
-        }
-      );
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      setLoading(false);
+      setError('All fields are required.');
+      return;
+    }
+    const res = await axios.post(`${BACKEND_URL}/api/user-feedback`, {
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    });
+    if (res && res.data.success) {
+      setShowPopUp(true);
+      setForm(INITIAL_STATE);
+      setLoading(false);
+      setError('');
+    } else {
+      setLoading(false);
+      setError('An error occured, please try again later.');
+    }
   };
 
   return (
     <div className={`flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row`}>
+      {showPopUp && <PopUp message="Message sent succesfully" />}
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="h-[350px] md:h-[550px] hidden xl:block xl:h-auto xl:flex-1 xl:max-w-[45%] rounded-2xl overflow-hidden shadow-primary"
       >
-        <img src={myImage} alt="abdrasaq-suleiman" className="h-full" />
+        <img src={myImage} alt="abdrasaq-suleiman" className="h-[100%] object-cover" />
       </motion.div>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
@@ -85,6 +75,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
+          {error && <p className="text-red-500">{error}</p>}
           {Object.keys(config.contact.form).map(input => {
             const { span, placeholder } =
               config.contact.form[input as keyof typeof config.contact.form];
@@ -107,7 +98,7 @@ const Contact = () => {
           })}
           <button
             type="submit"
-            className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none"
+            className="bg-[#915EFF] hover:bg-[#5f19f6] shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none"
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
