@@ -60,7 +60,7 @@ export const config: TConfig = {
       email: { span: "Your Email", placeholder: "What's your email?" },
       message: {
         span: "Your Message",
-        placeholder: "What do you want to say?",
+        placeholder: "Type your message here?",
       },
     },
   },

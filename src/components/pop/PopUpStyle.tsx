@@ -14,9 +14,9 @@ const PopUpMessageWrapper = styled.div`
   box-shadow: 15px 15px 15px #04513760;
   animation: animateMe 1s forwards;
   position: fixed;
-  top: 5%;
+  top: 15%;
   right: 0;
-  z-index: 2000;
+  z-index: 5000;
 
   &::after {
     content: "";

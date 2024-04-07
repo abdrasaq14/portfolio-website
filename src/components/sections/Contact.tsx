@@ -48,9 +48,10 @@ const Contact = () => {
       setForm(INITIAL_STATE);
       setLoading(false);
       setError('');
+      setTimeout(() => setShowPopUp(false), 2000);
     } else {
       setLoading(false);
-      setError('An error occured, please try again later.');
+      setError('An error occured, please try again later, or use the WhatsApp option.');
     }
   };
 
