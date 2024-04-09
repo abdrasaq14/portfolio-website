@@ -287,7 +287,7 @@ const projects: TProject[] = [
       },
     ],
     image: traidr,
-    sourceCodeLink: "https://traidr-frontend.onrender.com/",
+    sourceCodeLink: "https://decagon-traidr-frontend.onrender.com/",
   },
   // {
   //   name: "LearnHub",
