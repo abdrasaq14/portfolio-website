@@ -1,4 +1,4 @@
-import Tilt from 'react-parallax-tilt';
+// import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 
 import { MdRemoveRedEye } from 'react-icons/md';
@@ -21,7 +21,6 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   const [isMouseOver, setIsMouseOver] = useState(false);
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <Tilt glareEnable tiltEnable tiltMaxAngleX={30} tiltMaxAngleY={30} glareColor="#aaa6c3">
         <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px] min-h-[550px] flex flex-col justify-between">
           <div
             className="relative h-[230px] w-full cursor-pointer"
@@ -62,7 +61,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
             ))}
           </div>
         </div>
-      </Tilt>
+      
     </motion.div>
   );
 };

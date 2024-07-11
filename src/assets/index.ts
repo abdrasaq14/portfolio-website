@@ -33,6 +33,8 @@ import sandr from "../assets/company/s&r.png"
 import myImage from "../assets/abdrasaq.png"
 
 import quickgrade from "./work/quick.png";
+import intercity from "../assets/work/intercity.png"
+import profitall from "./work/profitall.png"
 import traidr from "./work/traidr.png"
 import notes from "./work/notes.png";
 import jobit from "./jobit.png";
@@ -69,6 +71,8 @@ export {
   jira,
   upwork,
   quickgrade,
+  intercity,
+  profitall,
   traidr,
   notes,
   sandr,
