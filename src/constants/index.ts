@@ -38,6 +38,7 @@ import {
   sandr,
   nextjs,
   vscode,
+  profitallLogo,
 } from '../assets';
 export const navLinks: TNavLink[] = [
   {
@@ -156,7 +157,18 @@ const technologies: TTechnology[] = [
 const experiences: TExperience[] = [
   {
     title: 'Software Engineer',
-    companyName: 'Decagon Institute',
+    companyName: 'ProfitAll, UK',
+    icon: profitallLogo,
+    iconBg: '#fffff',
+    date: 'March. 2024 - present',
+    points: [
+      'I worked as a backend Engineer (using Nodejs ) in a team charged with the responsibility of developing a white-label solution for Landmark University. This project encompassed comprehensive administrative features, e-commerce capabilities, and inventory management systems.',
+      'As a Fullstack Developer, I worked on the e-commerce section (Landmart) of a white-label solution. I developed APIs for products, cart, wishlist, orders, and transactions, and also contributed to the UI development.',
+    ],
+  },
+  {
+    title: 'Software Engineer',
+    companyName: 'Decagon Institute, Lagos State, Nigeria',
     icon: decagon,
     iconBg: '#fffff',
     date: 'Oct. 2022 - Feb. 2024',
@@ -169,15 +181,15 @@ const experiences: TExperience[] = [
   },
   {
     title: 'Software Engineer/IT Support Officer',
-    companyName: 'National Institute of Credit Administration',
+    companyName: 'National Institute of Credit Administration, Lagos State, Nigeria',
     icon: nica,
     iconBg: '#fffff',
     date: 'Nov. 2021 - Sept. 2022',
     points: [
-      "Conducted regular bug fixes and troubleshooting to maintain the integrity of the institute's website codebase, implementing timely software updates and security fixes to uphold the website's robustness.",
+      "Conducted regular bug fixes and troubleshooting to maintain the integrity of the institute&apos;s website codebase, implementing timely software updates and security fixes to uphold the website's robustness. This proactive approach ensured the website remained accessible and secure, enhancing user trust and engagement.",
       "Maintained the institute's WLAN to ensure proper functionality, performed regular PC checks ups, software upgrading, and general system maintenance.",
       'Oversaw database management, monitoring performance for efficient data handling, and established backup procedures to safeguard critical data.',
-      'Supported the media team by designing deliverables for social media campaigns, souvenirs etc.',
+      'Supported the media team by designing deliverables for social media campaigns, souvenirs etc. This significantly increased the team&apos;s productivity by providing visually compelling and engaging content that resonated with our target audience and also contributed to a measurable increase in conversion rates for our campaigns',
     ],
   },
   {

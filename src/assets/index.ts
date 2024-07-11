@@ -31,6 +31,7 @@ import stx from "../assets/company/stx.png"
 import upwork from "../assets/company/upwork.png"
 import sandr from "../assets/company/s&r.png"
 import myImage from "../assets/abdrasaq.png"
+import profitallLogo from "./company/profitall.png"
 
 import quickgrade from "./work/quick.png";
 import intercity from "../assets/work/intercity.png"
@@ -73,6 +74,7 @@ export {
   quickgrade,
   intercity,
   profitall,
+  profitallLogo,
   traidr,
   notes,
   sandr,
