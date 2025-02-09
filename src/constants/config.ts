@@ -68,7 +68,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a full-stack software engineer skilled in Node.js, Djangogit add (BE) and React.js (FE), with a strong background in agile methodologies. My expertise in design honed through my background as a graphic designer complements my coding skills, enabling me to create scalable, user-friendly applications that meet business needs and adhere to best practices.`,
+      content: `I'm a full-stack software engineer skilled in Node.js, Django (BE) and React.js (FE), with a strong background in agile methodologies. My expertise in design honed through my background as a graphic designer complements my coding skills, enabling me to create scalable, user-friendly applications that meet business needs and adhere to best practices.`,
     },
     technologies: {
       p: "What I have been using so far",
