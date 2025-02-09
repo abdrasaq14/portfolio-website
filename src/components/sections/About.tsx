@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { services } from "../../constants";
@@ -15,13 +14,7 @@ interface IServiceCard {
 }
 
 const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
-  <Tilt
-    glareEnable
-    tiltEnable
-    tiltMaxAngleX={30}
-    tiltMaxAngleY={30}
-    glareColor="#aaa6c3"
-  >
+
     <div className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -40,7 +33,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
         </div>
       </motion.div>
     </div>
-  </Tilt>
+  
 );
 
 const About = () => {

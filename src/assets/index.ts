@@ -32,9 +32,12 @@ import upwork from "../assets/company/upwork.png"
 import sandr from "../assets/company/s&r.png"
 import myImage from "../assets/abdrasaq.png"
 import profitallLogo from "./company/profitall.png"
+import smarteriseLogo from "./company/smarterise_logo.jpg"
 
 import quickgrade from "./work/quick.png";
 import intercity from "../assets/work/intercity.png"
+import mymarketsq from "../assets/work/mymarketsq.png"
+import smarterise from "../assets/work/smarterise.png"
 import profitall from "./work/profitall.png"
 import traidr from "./work/traidr.png"
 import notes from "./work/notes.png";
@@ -74,6 +77,9 @@ export {
   quickgrade,
   intercity,
   profitall,
+  mymarketsq, 
+  smarterise, 
+  smarteriseLogo,
   profitallLogo,
   traidr,
   notes,

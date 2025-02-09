@@ -39,6 +39,9 @@ import {
   nextjs,
   vscode,
   profitallLogo,
+  mymarketsq,
+  smarterise,
+  smarteriseLogo,
 } from '../assets';
 export const navLinks: TNavLink[] = [
   {
@@ -61,15 +64,15 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: 'Full-stack development',
+    title: 'Fullstack development',
     icon: web,
   },
   {
-    title: 'Front-end Developement',
+    title: 'Frontend Developement',
     icon: mobile,
   },
   {
-    title: 'Back-end Developement',
+    title: 'Backend Developement',
     icon: backend,
   },
   {
@@ -156,11 +159,23 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: 'Software Engineer',
+    title: 'Full-Stack Software Engineer (Contract)',
+    companyName: 'Smarterise Integrated Solutions, Lagos State, Nigeria',
+    icon: smarteriseLogo,
+    iconBg: '#fffff',
+    date: 'March 2024 - Present',
+    points: [
+      'Developed and maintained RESTful APIs using Django Rest Framework for managing IoT device data, including energy consumption and KPIs, while implementing authentication with Auth0 for secure user access',
+      'Created interactive charts to display energy usage trends and device performance, while focusing on building a responsive UI with an emphasis on smooth user experience and implementing real-time data updates using WebSockets.',
+      'Collaborated with the hardware team for seamless integration of IoT device data using MQTT and HTTP.',
+    ],
+  },
+  {
+    title: 'Software Engineer (Contract)',
     companyName: 'ProfitAll, UK',
     icon: profitallLogo,
     iconBg: '#fffff',
-    date: 'March. 2024 - present',
+    date: 'March 2024 - Sept., 2024',
     points: [
       'I worked as a backend Engineer (using Nodejs ) in a team charged with the responsibility of developing a white-label solution for Landmark University. This project encompassed comprehensive administrative features, e-commerce capabilities, and inventory management systems.',
       'As a Fullstack Developer, I worked on the e-commerce section (Landmart) of a white-label solution. I developed APIs for products, cart, wishlist, orders, and transactions, and also contributed to the UI development.',
@@ -258,6 +273,28 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
+    isOnGoing: true,
+    name: 'Smarterise Web App',
+    description:
+      'The Smarterise Web App is an enterprise energy monitoring platform designed to track energy consumption and performance metrics from transformers and generators in real-time.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'django',
+        color: 'golden-text-gradient',
+      },
+      {
+        name: 'auth0',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: smarterise,
+    sourceCodeLink: 'http://demo.powersmarter.net/',
+  },
+  {
     name: 'Intercity NG',
     description:
       'Intercity NG is a secure booking platform for people travelling or sending parcels across cities in Nigeria, which also help transport companies sell bus tickets and added services.',
@@ -279,6 +316,31 @@ const projects: TProject[] = [
     sourceCodeLink: 'https://intercity.ng',
   },
   {
+    name: 'Mymarketsq',
+    description:
+      'Mymarketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nodejs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'redux',
+        color: 'golden-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: mymarketsq,
+    sourceCodeLink: 'https://mymarketsq.com/',
+  },
+  {
     name: 'ProfitAll',
     description:
       'ProfitAll is a company fostering international trade by providing a seamless platform where corporations, entrepreneurs, and SMEs can grow their business by connecting with leading e-commerce brands.',
@@ -288,7 +350,7 @@ const projects: TProject[] = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'node',
+        name: 'nodejs',
         color: 'green-text-gradient',
       },
       {
