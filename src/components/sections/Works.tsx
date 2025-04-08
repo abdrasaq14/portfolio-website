@@ -6,12 +6,13 @@ import { SectionWrapper } from '../../hoc';
 import { projects } from '../../constants';
 import { fadeIn } from '../../utils/motion';
 import { config } from '../../constants/config';
-import { Header } from '../atoms/Header';
+// import { Header } from '../atoms/Header';
 import { TProject } from '../../types';
 import { useState } from 'react';
+import { styles } from '../../constants/styles';
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
-  index,
+  // index,
   name,
   description,
   tags,
@@ -21,7 +22,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
 }) => {
   const [isMouseOver, setIsMouseOver] = useState(false);
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    // <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <div className="relative bg-tertiary w-full rounded-2xl p-5 sm:w-[300px] min-h-[550px] flex flex-col justify-between overflow-hidden">
         {isOnGoing && (
           <div className="absolute !z-20 right-[-45px] shadow-md rotate-45 h-[20px] min-w-[150px] bg-[#ec008c] flex items-center justify-center text-sm font-semibold">
@@ -67,16 +68,18 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
           ))}
         </div>
       </div>
-    </motion.div>
+
   );
 };
 
 const Works = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.works} />
-
-      <div className="flex w-full">
+      {/* <Header useMotion={true} {...config.sections.works} /> */}
+      <p className={styles.sectionSubText}>{config.sections.works.p}</p>
+      <h2 className={styles.sectionHeadText}>{config.sections.works.h2}</h2>
+      
+      <div className="hidden sm:flex w-full">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="text-secondary mt-3 max-w-3xl text-[17px] leading-[30px]"
@@ -94,4 +97,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Works, 'projects');
