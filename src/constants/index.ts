@@ -321,28 +321,6 @@ const projects: TProject[] = [
     sourceCodeLink: 'http://demo.powersmarter.net/',
   },
   {
-    name: 'Intercity NG',
-    description:
-      'Intercity NG is a secure booking platform for people travelling or sending parcels across cities in Nigeria, which also help transport companies sell bus tickets and added services.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nextjs',
-        color: 'golden-text-gradient',
-      },
-      {
-        name: 'redux',
-        color: 'green-text-gradient',
-      },
-      { name: 'typescript', color: 'typescript-text-gradient' },
-    ],
-    image: intercity,
-    sourceCodeLink: 'https://intercity.ng',
-  },
-  {
     name: 'CVtoCAREER',
     description:
       'CVtoCAREER empowers you with expert guidance, automation, and career-building tools to navigate the job market seamlessly and take the next step in your professional journey—on your terms.',
@@ -364,6 +342,29 @@ const projects: TProject[] = [
     image: cvtocareer,
     sourceCodeLink: 'https://www.cvtocareer.com/',
   },
+  {
+    name: 'Intercity NG',
+    description:
+      'Intercity NG is a secure booking platform for people travelling or sending parcels across cities in Nigeria, which also help transport companies sell bus tickets and added services.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextjs',
+        color: 'golden-text-gradient',
+      },
+      {
+        name: 'redux',
+        color: 'green-text-gradient',
+      },
+      { name: 'typescript', color: 'typescript-text-gradient' },
+    ],
+    image: intercity,
+    sourceCodeLink: 'https://intercity.ng',
+  },
+
   {
     name: 'Mymarketsq',
     description:
