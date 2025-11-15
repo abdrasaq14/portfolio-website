@@ -100,6 +100,29 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.black-text-gradient {
+  background: #000000;
+  background: -webkit-linear-gradient(to top, #000000, #4b5563);
+  background: linear-gradient(to top, #000000, #4b5563);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typescript-text-gradient {
+  background: #3178c6;
+  background: -webkit-linear-gradient(to top, #3178c6, #70b8ff);
+  background: linear-gradient(to top, #3178c6, #70b8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tailwind-text-gradient {
+  background: #06b6d4;
+  background: -webkit-linear-gradient(to top, #06b6d4, #67e8f9);
+  background: linear-gradient(to top, #06b6d4, #67e8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* canvas- styles */
 .canvas-loader {

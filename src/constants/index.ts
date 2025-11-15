@@ -42,6 +42,8 @@ import {
   mymarketsq,
   smarterise,
   smarteriseLogo,
+  hashrails,
+  cvtocareer,
 } from '../assets';
 export const navLinks: TNavLink[] = [
   {
@@ -278,6 +280,26 @@ const testimonials: TTestimonial[] = [
 const projects: TProject[] = [
   {
     isOnGoing: true,
+    name: 'Hashrails',
+    description:
+      'Hashrails makes it simple to convert, move, and settle stablecoins across fragmented markets — with one API, embedded compliance, and deep liquidity built in.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextjs',
+        color: 'black-text-gradient',
+      },
+      { name: 'tailwind', color: 'tailwind-text-gradient' },
+      { name: 'typescript', color: 'typescript-text-gradient' },
+    ],
+    image: hashrails,
+    sourceCodeLink: 'https://hashrails.xyz/',
+  },
+  {
+    isOnGoing: false,
     name: 'Smarterise Web App',
     description:
       'The Smarterise Web App is an enterprise energy monitoring platform designed to track energy consumption and performance metrics from transformers and generators in real-time.',
@@ -294,6 +316,7 @@ const projects: TProject[] = [
         name: 'auth0',
         color: 'pink-text-gradient',
       },
+      { name: 'typescript', color: 'typescript-text-gradient' },
     ],
     image: smarterise,
     sourceCodeLink: 'http://demo.powersmarter.net/',
@@ -315,9 +338,32 @@ const projects: TProject[] = [
         name: 'redux',
         color: 'green-text-gradient',
       },
+      { name: 'typescript', color: 'typescript-text-gradient' },
     ],
     image: intercity,
     sourceCodeLink: 'https://intercity.ng',
+  },
+  {
+    name: 'CVtoCAREER',
+    description:
+      'CVtoCAREER empowers you with expert guidance, automation, and career-building tools to navigate the job market seamlessly and take the next step in your professional journey—on your terms.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextjs',
+        color: 'black-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'pink-text-gradient',
+      },
+      { name: 'typescript', color: 'typescript-text-gradient' },
+    ],
+    image: cvtocareer,
+    sourceCodeLink: 'https://www.cvtocareer.com/',
   },
   {
     name: 'Mymarketsq',
@@ -340,31 +386,12 @@ const projects: TProject[] = [
         name: 'mongodb',
         color: 'pink-text-gradient',
       },
+      { name: 'typescript', color: 'typescript-text-gradient' },
     ],
     image: mymarketsq,
     sourceCodeLink: 'https://mymarketsq.com/',
   },
-  {
-    name: 'ProfitAll',
-    description:
-      'ProfitAll is a company fostering international trade by providing a seamless platform where corporations, entrepreneurs, and SMEs can grow their business by connecting with leading e-commerce brands.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: profitall,
-    sourceCodeLink: 'https://www.profitall.co.uk/',
-  },
+
   {
     name: 'QuickGrade',
     description:
@@ -382,6 +409,7 @@ const projects: TProject[] = [
         name: 'mysql',
         color: 'pink-text-gradient',
       },
+      { name: 'typescript', color: 'typescript-text-gradient' },
     ],
     image: quickgrade,
     sourceCodeLink: 'https://quickgrade-frontend-lbbo.onrender.com/',

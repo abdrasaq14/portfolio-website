@@ -43,6 +43,8 @@ import traidr from "./work/traidr.png"
 import notes from "./work/notes.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import hashrails from './work/hashrails.png'
+import cvtocareer from './work/cv-to-career.png'
 
 export {
   logo,
@@ -87,4 +89,6 @@ export {
   myImage,
   jobit,
   tripguide,
+  hashrails,
+  cvtocareer
 };
