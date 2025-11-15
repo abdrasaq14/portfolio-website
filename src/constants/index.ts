@@ -34,7 +34,6 @@ import {
   docker,
   quickgrade,
   intercity,
-  profitall,
   sandr,
   nextjs,
   vscode,
