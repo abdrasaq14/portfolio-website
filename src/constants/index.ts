@@ -353,7 +353,7 @@ const projects: TProject[] = [
       },
       {
         name: 'nextjs',
-        color: 'golden-text-gradient',
+        color: 'black-text-gradient',
       },
       {
         name: 'redux',
