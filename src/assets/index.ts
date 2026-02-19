@@ -33,6 +33,7 @@ import sandr from "../assets/company/s&r.png"
 import myImage from "../assets/abdrasaq.png"
 import profitallLogo from "./company/profitall.png"
 import smarteriseLogo from "./company/smarterise_logo.jpg"
+import hashrailsLogo from "./company/hashrails-logo.svg"
 
 import quickgrade from "./work/quick.png";
 import intercity from "../assets/work/intercity.png"
@@ -82,6 +83,7 @@ export {
   mymarketsq, 
   smarterise, 
   smarteriseLogo,
+  hashrailsLogo,
   profitallLogo,
   traidr,
   notes,

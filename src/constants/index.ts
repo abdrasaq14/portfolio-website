@@ -42,6 +42,7 @@ import {
   smarteriseLogo,
   hashrails,
   cvtocareer,
+  hashrailsLogo,
 } from '../assets';
 export const navLinks: TNavLink[] = [
   {
@@ -163,11 +164,23 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: 'Full-Stack Software Engineer (Contract)',
+    title: 'Frontend Engineer (Contract)',
+    companyName: 'Hashrails, Lagos State, Nigeria',
+    icon: hashrailsLogo,
+    iconBg: '#fffff',
+    date: 'September 2025 - Present',
+    points: [
+      'Working as a Frontend Engineer at Hashrails, building and improving user-facing features that power stablecoin conversion, transfers, and settlement across fragmented markets.',
+      'Developing clean, reusable components with React and Next.js, and integrating backend APIs to display real-time transaction data, balances, liquidity insights, and compliance checks.',
+      'Collaborating closely with backend, product, and compliance teams to ensure smooth payment flows, strong performance, and a secure, intuitive user experience across devices.',
+    ],
+  },
+  {
+    title: 'Full-Stack Software Engineer',
     companyName: 'Smarterise Integrated Solutions, Lagos State, Nigeria',
     icon: smarteriseLogo,
     iconBg: '#fffff',
-    date: 'March 2024 - Present',
+    date: 'March 2024 - January 2026',
     points: [
       'Developed and maintained RESTful APIs using Django Rest Framework for managing IoT device data, including energy consumption and KPIs, while implementing authentication with Auth0 for secure user access',
       'Created interactive charts to display energy usage trends and device performance, while focusing on building a responsive UI with an emphasis on smooth user experience and implementing real-time data updates using WebSockets.',
