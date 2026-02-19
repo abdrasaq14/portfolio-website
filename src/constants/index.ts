@@ -38,7 +38,6 @@ import {
   nextjs,
   vscode,
   profitallLogo,
-  mymarketsq,
   smarterise,
   smarteriseLogo,
   hashrails,
@@ -318,7 +317,7 @@ const projects: TProject[] = [
       { name: 'typescript', color: 'typescript-text-gradient' },
     ],
     image: smarterise,
-    sourceCodeLink: 'http://demo.powersmarter.net/',
+    sourceCodeLink: 'https://smarterise.ai/',
   },
   {
     name: 'CVtoCAREER',
@@ -365,32 +364,32 @@ const projects: TProject[] = [
     sourceCodeLink: 'https://intercity.ng',
   },
 
-  {
-    name: 'Mymarketsq',
-    description:
-      'Mymarketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'redux',
-        color: 'golden-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'pink-text-gradient',
-      },
-      { name: 'typescript', color: 'typescript-text-gradient' },
-    ],
-    image: mymarketsq,
-    sourceCodeLink: 'https://mymarketsq.com/',
-  },
+  // {
+  //   name: 'Mymarketsq',
+  //   description:
+  //     'Mymarketsq is a revolutionary two-in-one platform that combines the features of an ecommerce marketplace and a freelancing platform. It allows buyers to access sellers storefronts to buy and sell goods and services.',
+  //   tags: [
+  //     {
+  //       name: 'react',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'nodejs',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'redux',
+  //       color: 'golden-text-gradient',
+  //     },
+  //     {
+  //       name: 'mongodb',
+  //       color: 'pink-text-gradient',
+  //     },
+  //     { name: 'typescript', color: 'typescript-text-gradient' },
+  //   ],
+  //   image: mymarketsq,
+  //   sourceCodeLink: 'https://mymarketsq.com/',
+  // },
 
   {
     name: 'QuickGrade',
