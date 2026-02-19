@@ -295,7 +295,7 @@ const projects: TProject[] = [
       { name: 'typescript', color: 'typescript-text-gradient' },
     ],
     image: hashrails,
-    sourceCodeLink: 'https://hashrails.xyz/',
+    sourceCodeLink: 'https://hashrails.com/',
   },
   {
     isOnGoing: false,
