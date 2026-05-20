@@ -47,7 +47,7 @@ export const config: TConfig = {
   },
   hero: {
     name: 'Abdulrasaq',
-    p: ['I am a full-stack software developer, ', 'passionate about innovative solutions.'],
+    p: ['A frontend engineer passionate about', 'innovative solutions.'],
   },
   contact: {
     p: 'Get in touch',
@@ -68,7 +68,7 @@ export const config: TConfig = {
     about: {
       p: 'Introduction',
       h2: 'Overview.',
-      content: `I'm a results-driven software developer with expertise in developing user-friendly and scalable applications. My experience includes building robust backend services and dynamic frontend interfaces, allowing me to create seamless user experiences. Additionally, I possess a keen eye for design, honed through my background as a graphic designer I have experience working on enterprise applications, e-commerce platforms, IoT systems, and cloud-based solutions.`,
+      content: `I'm a frontend engineer with 5+ years of proven experience as a software engineer, delivering high-quality web applications across fintech, IoT, and enterprise platforms. Specialized in software design and architecture using React, Next.js, and TypeScript, with deep expertise spanning the full software development lifecycle (SDLC) from requirements definition and clean code implementation through validation and verification testing, production monitoring, and ongoing system improvement.`,
     },
     technologies: {
       p: 'What I have been using so far',
